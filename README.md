@@ -7,7 +7,7 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource) and cross-compatibl
 ## Features
 - Add different source ports : ccdoom has support for the following source ports as of now : ZDoom, GZDoom, Chocolate Doom and Crispy Doom.
 - You can use any IWAD you want.
-- Support for PWADS and patches : You can add any kind of mod you want or patch, whether it is a WAD, DEH/BEX patche, CFGs or archive (ZIP, PK3, PK7, etc.).
+- Support for PWADS and patches : You can add any kind of mod you want or patch, whether it is a WAD, DEH/BEX patch, CFGs or archive (ZIP, PK3, PK7, etc.), ccdoom accepts all file types.
 - Easy management of mods and wads.
 - You can add additional arguments to enhance your DOOM experience.
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
