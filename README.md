@@ -12,7 +12,7 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource) and cross-compatibl
 
 <div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/veryearlyalphabuild.png" width=70% height=70% /></div>
 
->A screenshot of a very early alpha build of `ccdoom` after launching `gzdoom` with a mod installed (Spongebob Doom 2)
+>A screenshot of a very early alpha build of `ccdoom` after launching `gzdoom` with a mod installed (Spongebob Doom 2) running on Debian 11 Bullseye.
 
 ## Building
 In order to build ccdoom, all you need is basically a jdk.
