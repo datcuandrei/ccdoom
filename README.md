@@ -1,7 +1,4 @@
-# ccdoom
-A cross-compatible DOOM launcher.
-
-## What is ccdoom?
+# <div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/img/banner.png" /></div>
 ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource) and cross-compatible DOOM launcher that aims to be minimalist, lightweight and completely cross-compatible. To achieve that, ccdoom is written in Java and can be built using the Python script provided. It does not use any third-party library and the look and feel of ccdoom will be the one that's native for your operating system (for GNU/Linux distributions, ccdoom will use GTK).
 
 ## Features
@@ -12,6 +9,10 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource) and cross-compatibl
 - You can add additional arguments to enhance your DOOM experience.
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
 - The way you configure ccdoom is automatically saved : ccdoom will save your current configuration in a folder found in your user directory.
+
+<div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/veryearlyalphabuild.png" width=70% height=70% /></div>
+
+>A screenshot of a very early alpha build of `ccdoom` after launching `gzdoom` with a mod installed (Spongebob Doom 2)
 
 ## Building
 In order to build ccdoom, all you need is basically a jdk.
