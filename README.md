@@ -1,5 +1,5 @@
 # <div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/img/banner.png" /></div>
-ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource) and cross-compatible DOOM launcher that aims to be minimalist, lightweight and completely cross-compatible. To achieve that, ccdoom is written in Java and can be built using the Python script provided. It does not use any third-party library and the look and feel of ccdoom will be the one that's native for your operating system (for GNU/Linux distributions, ccdoom will use GTK).
+ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource <b>S</b>oftware) and cross-compatible DOOM launcher that aims to be minimalist, lightweight and completely cross-compatible. To achieve that, ccdoom is written in Java and can be built using the Python script provided. It does not use any third-party library and the look and feel of ccdoom will be the one that's native for your operating system (for GNU/Linux distributions, ccdoom will use GTK).
 
 ## Features
 - Add different source ports : ccdoom has support for the following source ports as of now : ZDoom, GZDoom, Zandronum, Chocolate Doom and Crispy Doom.
@@ -10,9 +10,9 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource) and cross-compatibl
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
 - Support for profiles : Love your current configuration? You can save it as a profile, and load it any time you want. You can have as many profiles as you want.
 
-<div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/veryearlyalphabuild.png" width=70% height=70% /></div>
+<div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/main/img/Screenshot%20from%202021-09-01%2013-59-35.png" width=70% height=70% /></div>
 
->A screenshot of a very early alpha build of `ccdoom` after launching `gzdoom` with a mod installed (Spongebob Doom 2) running on Debian 11 Bullseye.
+> ccdoom build 0.3-alpha (built on 1 Sep 2021) running ZDoom with SpongeBob-Doom2 mod on Debian 11 Bullseye.
 
 ## Building
 In order to build ccdoom, all you need is basically a jdk.
@@ -33,6 +33,23 @@ To create ccdoom, I used the following tools :
 - [Krita](https://krita.org/en/) - for designing the logo of ccdoom.
 
 ## License
-ccdoom is currently still in development. When the project will be finished and ready to publish, only by then the license will be made public.
+ccdoom is currently still in development. The project will be released under the GNU GPL version 3.
+```
+    CCDOOM - A cross-compatible DOOM launcher. 
+    Copyright (C) 2021 Andrei Datcu.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
 
 <b>Copyright (c) 2021 Andrei Datcu. All rights reserved.</b>
