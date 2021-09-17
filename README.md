@@ -4,13 +4,13 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource <b>S</b>oftware) and
 
 ## Setup
 To get ccdoom, simply download the latest binary available in the releases page.
-<b>The prebuilt binaries require JDK 17</b>
+<b>The prebuilt binary requires JDK 17</b>
 
 To learn how to use it, read the [instructions](instructions/instructions.md). You can also read the same instructions if you go to `Help > Get started with ccdoom`
 
 This is how ccdoom looks across different OS'
 ![](img/interfaces.png)
-> From left to right : GNU/Linux, Windows, Mac OS X
+> From left to right : GNU/Linux, Windows, Mac OS X. Same binary, different platforms.
 ## Features
 - Add different source ports : ccdoom has support for the following source ports as of now : ZDoom, GZDoom, Zandronum, Chocolate Doom and Crispy Doom.
 - You can use any IWAD you want.
