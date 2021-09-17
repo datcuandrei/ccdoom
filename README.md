@@ -1,6 +1,14 @@
 # <div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/img/banner.png" /></div>
 ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource <b>S</b>oftware) and cross-compatible DOOM launcher that aims to be minimalist, lightweight and completely cross-compatible. To achieve that, ccdoom is written in Java and can be built using the Python script provided. It does not use any third-party library and the look and feel of ccdoom will be the one that's native for your operating system (for GNU/Linux distributions, ccdoom will use GTK).
 
+![](img/interfaces.png)
+> From left to right : GNU/Linux, Windows, Mac OS X
+
+## Setup
+To get ccdoom, simply download the latest binary available in the releases page.
+<b>The prebuilt binaries require JDK 17</b>
+
+To learn how to use it, read the [instructions](instructions/instructions.md). You can also read the same instructions if you go to `Help > Get started with ccdoom`
 ## Features
 - Add different source ports : ccdoom has support for the following source ports as of now : ZDoom, GZDoom, Zandronum, Chocolate Doom and Crispy Doom.
 - You can use any IWAD you want.
@@ -15,7 +23,7 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource <b>S</b>oftware) and
 > ccdoom build 0.3-alpha (built on 1 Sep 2021) running ZDoom with SpongeBob-Doom2 mod on Debian 11 Bullseye.
 
 ## Building
-In order to build ccdoom, all you need is basically a jdk.
+In order to build ccdoom, all you need is basically a JDK.
 
 The way I build ccdoom, is through the Python script provided. The script is supposed to help the developer to easily build and compile ccdoom, and at the same time offer the freedom to add or remove anything he wants.
 
