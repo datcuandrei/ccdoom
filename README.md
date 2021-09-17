@@ -1,4 +1,5 @@
-# <div align = center><img src="https://raw.githubusercontent.com/datcuandrei/ccdoom/master/img/banner.png" /></div>
+![](img/banner.png)
+
 ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource <b>S</b>oftware) and cross-compatible DOOM launcher that aims to be minimalist, lightweight and completely cross-compatible. To achieve that, ccdoom is written in Java and can be built using the Python script provided. It does not use any third-party library and the look and feel of ccdoom will be the one that's native for your operating system (for GNU/Linux distributions, ccdoom will use GTK).
 
 ## Setup
