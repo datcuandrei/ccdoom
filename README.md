@@ -20,6 +20,16 @@ This is how ccdoom looks across different OS'
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
 - Support for profiles : Love your current configuration? You can save it as a profile, and load it any time you want. You can have as many profiles as you want.
 
+## What to expect in the future releases
+- No PATH variable requirement:
+If it isn't added to your PATH variable, you can browse for the location of your source port and ccdoom will save the location to it.
+
+- File not found when loading a profile:
+This happens when a user loads a profile and they have not added something to their IWADS or mods list. It is currently present in the technical preview (0.3), but will be fixed.
+
+- Multiplayer support:
+With the final release, I am planning to add multiplayer support.
+
 ## Building
 In order to build ccdoom, all you need is basically a JDK.
 
