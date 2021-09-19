@@ -42,10 +42,10 @@ public class sp{
 		String getPWADs = Arrays.toString(ccdoom.pwadsList.toArray()).substring(1,Arrays.toString(ccdoom.pwadsList.toArray()).length()-1).replaceAll(",","").replaceAll(" ", "\\ ");
 		// getting the additional command line arguments
 		String clis = ccdoom.addcli.getText();
-		String zandronum = "command" + ccdoom.iwadsList.toArray() + ccdoom.pwadsList.toArray();
+		String zandronum = "zandronum -iwad " + getIWAD + " -file " +getPWADs+" "+clis;
 		String zdoom = "zdoom -iwad " + getIWAD + " -file " +getPWADs+" "+clis;
 		String gzdoom = "gzdoom -iwad " + getIWAD + " -file " +getPWADs+" "+clis;
-		String crispydoom = "crispy-doom -iwad " + getIWAD+" "+clis;
+		String crispydoom = "crispy-doom -iwad " + getIWAD+" -file " +getPWADs+" "+clis;
 		String chocodoom = "chocolate-doom -iwad " + getIWAD+" "+clis;
 	
 		// determing which source port the user wants to launch.

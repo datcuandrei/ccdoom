@@ -50,13 +50,27 @@ public class profiles{
 		String profileDir = profilesPath + File.separator + profileName;
 		File createDir = new File(profileDir);
 		createDir.mkdir();
-		String iwadsF = profileDir + File.separator + "iwads.txt"; // contains all iwads added
-		String pwadsF = profileDir + File.separator + "pwads.txt"; // contains all pwads added.
-		String spF = profileDir + File.separator + "sp.txt"; // contains all sourceports added.
+		File iwadsF = new File(profileDir + File.separator + "iwads.txt"); // contains all iwads added
+		File pwadsF = new File(profileDir + File.separator + "pwads.txt"); // contains all pwads added.
+		File spF = new File(profileDir + File.separator + "sp.txt"); // contains all sourceports added.
+		File argF = new File(profileDir + File.separator + "arg.txt"); // contains the additional arguments
+
+		// creating the files
 		try{
-			config.writeFile(spF, "sp"); // creates the sp.txt file with all the sourceports found inside mainClass.installedSourcePorts
-			config.writeFile(iwadsF, "iwad"); // creates the iwads.txt file with all the iwads found inside mainClass.iwadsList
-			config.writeFile(pwadsF, "pwad"); // creates the pwads.txt file with all the iwads found inside mainClass.pwadsList
+			iwadsF.createNewFile();
+			pwadsF.createNewFile();
+			spF.createNewFile();
+			argF.createNewFile();
+		}catch(IOException e){
+			JOptionPane.showMessageDialog(null,"Couldn't write files. Please report this error to @datcuandrei on GitHub : " + e.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);	
+		}
+
+		// writing the files
+		try{
+			config.writeFile(spF.getAbsolutePath(), "sp"); // creates the sp.txt file with all the sourceports found inside mainClass.installedSourcePorts
+			config.writeFile(iwadsF.getAbsolutePath(), "iwad"); // creates the iwads.txt file with all the iwads found inside mainClass.iwadsList
+			config.writeFile(pwadsF.getAbsolutePath(), "pwad"); // creates the pwads.txt file with all the iwads found inside mainClass.pwadsList
+			config.writeFile(argF.getAbsolutePath(), "arg"); // creates the arg.txt file with the additional arguments found in mainClass.addcli
 		}catch(IOException e){
 			JOptionPane.showMessageDialog(null,"Couldn't write files. Please report this error to @datcuandrei on GitHub : " + e.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);	
 		}
@@ -73,17 +87,20 @@ public class profiles{
 		mainClass.installedSourcePorts.removeAllItems();
 		mainClass.iwadsList.removeAllElements();
 		mainClass.pwadsList.removeAllElements();
+		mainClass.addcli.setText("");
 
 		// updating the gui
 		SwingUtilities.updateComponentTreeUI(mainClass.installedSourcePorts);
 		SwingUtilities.updateComponentTreeUI(mainClass.IWADS);
 		SwingUtilities.updateComponentTreeUI(mainClass.PWADS);
+		SwingUtilities.updateComponentTreeUI(mainClass.addcli);
 
 		// finally, reading the files
 		try{
 			config.readFile(profileDir + File.separator + "sp.txt", "sp"); // reading the sourceports file
 			config.readFile(profileDir + File.separator + "iwads.txt", "iwad"); // reading the iwads file
 			config.readFile(profileDir + File.separator + "pwads.txt", "pwad"); // reading the pwads file
+			config.readFile(profileDir + File.separator + "arg.txt", "arg"); // reading the arguments file
 		}catch(FileNotFoundException e){
 			JOptionPane.showMessageDialog(null,"Couldn't read files. Please report this error to @datcuandrei on GitHub : " + e.getMessage(),"Error",JOptionPane.ERROR_MESSAGE);	
 		}catch(IOException e){

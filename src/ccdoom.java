@@ -15,7 +15,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
- */
+*/
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -92,8 +93,8 @@ public class ccdoom{
 		JMenuItem rmSourcePorts = new JMenuItem("Remove added source port");
 		JMenuItem addIWADS = new JMenuItem("Add IWADS");
 		JMenuItem rmIWADS = new JMenuItem("Remove IWADS");
-		JMenuItem addPWADS = new JMenuItem("Add PWADS");
-		JMenuItem rmPWADS = new JMenuItem("Remove PWADS");
+		JMenuItem addPWADS = new JMenuItem("Add mods");
+		JMenuItem rmPWADS = new JMenuItem("Remove mods");
 		JMenuItem quit = new JMenuItem("Quit");
 
 		// adding the functionality to every button
@@ -212,14 +213,14 @@ public class ccdoom{
         			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			}
 			// informational message about technical preview
-			JOptionPane.showMessageDialog(null,"Welcome to ccdoom!\n\nPlease note that this is a technical preview of ccdoom, not a finished product.\nIf you encounter any bugs or issues, go to 'Help > Report issue'\n and write a detailed description of what problems you have noticed.\nAgain, this is not the finished product and as a result, things might be much more \nunstable than anticipated.\nThe finished product will be polished, fully working and will include new exciting features.\n\nIt is recommended that you see 'Help > Get started with ccdoom' to learn how to use ccdoom. \n\nI hope you will enjoy ccdoom as much as I enjoy working on it!\n\n Regards,\n Andrei Datcu.","Welcome!",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null,"Welcome to ccdoom!\n\nPlease note that this is an alpha build of ccdoom, not a finished product.\nIf you encounter any bugs or issues, go to 'Help > Report issue'\n and write a detailed description of what problems you have noticed.\nAgain, this is not the finished product and as a result, things might be much more \nunstable than anticipated.\nThe finished product will be polished, fully working and will include new exciting features.\n\nIt is recommended that you see 'Help > Get started with ccdoom' to learn how to use ccdoom. \n\nI hope you will enjoy ccdoom as much as I enjoy working on it!\n\n Regards,\n Andrei Datcu.","Welcome!",JOptionPane.INFORMATION_MESSAGE);
 			// building the main frame
-			JFrame mainFrame = new JFrame("ccdoom for "+System.getProperty("os.name")+": 18 Sep 2021");
+			JFrame mainFrame = new JFrame("ccdoom for "+System.getProperty("os.name")+": 19 Sep 2021");
 		
 			mainFrame.setLayout(new BorderLayout());
 			mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 			mainFrame.setLocationRelativeTo(null);
-			mainFrame.setSize(new Dimension(450,650));
+			mainFrame.setSize(new Dimension(490,690));
 
 			mainFrame.add(getMenuBar(), BorderLayout.PAGE_START);
 			mainFrame.add(getMidPanel(),BorderLayout.CENTER);

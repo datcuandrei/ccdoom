@@ -32,7 +32,7 @@ public class conf{
 	public static void writeFile(String filePath, String fileType) throws IOException{
 			File newFile = new File(filePath);// creating a new file
 			// the following is easy to understand
-			// this method will only be for iwads and pwads, as no other files will be used with it.
+			// this method will only be for ccdoom files, as no other files will be used with it.
 			if(fileType.equals("iwad")){
 				for (int i=0; i < mainClass.iwadsList.getSize(); i++){
 						FileWriter writer = new FileWriter(newFile, true); // opening a new writer
@@ -51,6 +51,12 @@ public class conf{
 						writer.write(mainClass.installedSourcePorts.getItemAt(i) + "\n");
 						writer.close();
 					}	
+			}else if(fileType.equals("arg")){
+				for (int i=0; i < mainClass.installedSourcePorts.getItemCount(); i++){
+						FileWriter writer = new FileWriter(newFile, true); // opening a new writer
+						writer.write(mainClass.addcli.getText());
+						writer.close();
+					}	
 			}
 		}
 
@@ -64,13 +70,15 @@ public class conf{
 			BufferedReader buffer = new BufferedReader(reader); // passing the data read in a buffer
 			String line;
 			while ((line = buffer.readLine())!=null){
-				// this method will only be for iwads and pwads, as no other files will be used with it.
+				// this method will only be for ccdoom files, as no other files will be used with it.
                	if(fileType.equals("iwad")){
                		mainClass.iwadsList.addElement(line);
                	}else if(fileType.equals("pwad")){
                		mainClass.pwadsList.addElement(line);
                	}else if(fileType.equals("sp")){
                		mainClass.installedSourcePorts.addItem(line);
+               	}else if(fileType.equals("arg")){
+               		mainClass.addcli.setText(line);
                	}
                }
 		}
