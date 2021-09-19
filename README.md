@@ -4,7 +4,7 @@ ccdoom is a FOSS (<b>F</b>ree and <b>O</b>pen <b>S</b>ource <b>S</b>oftware) and
 
 ## Setup
 To get ccdoom, simply download the latest binary available in the releases page.
-<b>The prebuilt binary requires JDK 17</b>
+<b>The prebuilt binary requires JDK 16</b>
 
 To learn how to use it, read the [instructions](instructions/instructions.md). You can also read the same instructions if you go to `Help > Get started with ccdoom`
 
@@ -20,12 +20,12 @@ This is how ccdoom looks across different OS'
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
 - Support for profiles : Love your current configuration? You can save it as a profile, and load it any time you want. You can have as many profiles as you want.
 
+![](img/ccdoom-05.png)
+> A screenshot of ccdoom 0.5-alpha running Zandronum with Brutal Doom mod, on ArcoLinux.
+
 ## What to expect in the future releases
 - No PATH variable requirement:
 If it isn't added to your PATH variable, you can browse for the location of your source port and ccdoom will save the location to it.
-
-- File not found when loading a profile:
-This happens when a user loads a profile and they have not added something to their IWADS or mods list. It is currently present in the technical preview (0.3), but will be fixed.
 
 - Multiplayer support:
 With the final release, I am planning to add multiplayer support.
@@ -44,7 +44,7 @@ If you do not provide the script the building directory, by default it will try 
 
 To create ccdoom, I used the following tools :
 - [MTIDE](https://github.com/datcuandrei/MTIDE) - my very own IDE.
-- [OpenJDK 17](https://openjdk.java.net/)
+- [OpenJDK 16](https://openjdk.java.net/)
 - [Python 3](https://www.python.org/)
 - [Krita](https://krita.org/en/) - for designing the logo of ccdoom.
 
