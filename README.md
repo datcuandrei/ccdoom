@@ -20,8 +20,9 @@ This is how ccdoom looks across different OS'
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
 - Support for profiles : Love your current configuration? You can save it as a profile, and load it any time you want. You can have as many profiles as you want.
 
-![](img/ccdoom-05.png)
-> A screenshot of ccdoom 0.5-alpha running Zandronum with Brutal Doom mod, on ArcoLinux.
+![](img/051-alpha.png)
+> A screenshot of ccdoom 0.5.1-alpha running Zandronum with Brutal Doom mod, on ArcoLinux.
+> And a peak at the upcoming server browser ;)
 
 ## What to expect in the future releases
 - No PATH variable requirement:
