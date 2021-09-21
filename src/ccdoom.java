@@ -32,6 +32,7 @@ public class ccdoom{
 	public static sp sourcePorts = new sp(); // class that contains the method for running DOOM.
 	public static profiles profilesClass = new profiles(); // class that contains the methods for managing profiles.
 	public static help helpClass = new help(); // class that contains the methods required for the help submenus functionality.
+	public static multiplayer multiplayerClass = new multiplayer(); // class that contains the methods required for multiplayer functionality.
 
 	// gui elements
 	public static JMenuBar menuBar = new JMenuBar(); // top bar
@@ -39,6 +40,7 @@ public class ccdoom{
 	public static JMenu options = new JMenu("Options"); // menu that contains options for user to configure
 	public static JMenu profiles = new JMenu("Profiles"); // menu that contains options for the user to configure their profiles.
 	public static JMenu help = new JMenu("Help"); // menu that contains the about section, as well as the updates button.
+	public static JMenu multiplayer = new JMenu("Multiplayer"); // menu that contains multiplayer features.
 
 	public static JPanel midPanel = new JPanel(); // panel that contains the elements found in the center of the layout.
 	// midPanel components -->
@@ -78,8 +80,7 @@ public class ccdoom{
 	public static JScrollPane getPWADSpane(){
 		PWADSpane = new JScrollPane(PWADS);
 		PWADSpane.setPreferredSize(new Dimension(350,200));
-		PWADSpane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
-		PWADSpane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+		
 		return PWADSpane;
 		}
 	// <--
@@ -137,6 +138,15 @@ public class ccdoom{
 		profiles.add(deleteProfile);
 		return profiles;
 		}
+
+	public static JMenu getMultiplayer(){
+			JMenuItem browseServers = new JMenuItem("See server browser...");
+
+			browseServers.addActionListener(multiplayerClass.browseServersAction);
+
+			multiplayer.add(browseServers);
+			return multiplayer;
+		}
 	public static JMenu getHelp(){
 		JMenuItem gettingStarted = new JMenuItem("Get started with ccdoom");
 		JMenuItem updates = new JMenuItem("Updates");
@@ -162,6 +172,7 @@ public class ccdoom{
 
 		menuBar.add(getOptions());
 		menuBar.add(getProfiles());
+		menuBar.add(getMultiplayer());
 		menuBar.add(getHelp());
 
 		return menuBar;
@@ -174,7 +185,7 @@ public class ccdoom{
 		launch.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent actionEvent){
-					sourcePorts.runDoom();	
+					sourcePorts.runDoom(false, null); //  running in single player	
 				}
 			});
 		return launch;
@@ -215,7 +226,7 @@ public class ccdoom{
 			// informational message about technical preview
 			JOptionPane.showMessageDialog(null,"Welcome to ccdoom!\n\nPlease note that this is an alpha build of ccdoom, not a finished product.\nIf you encounter any bugs or issues, go to 'Help > Report issue'\n and write a detailed description of what problems you have noticed.\nAgain, this is not the finished product and as a result, things might be much more \nunstable than anticipated.\nThe finished product will be polished, fully working and will include new exciting features.\n\nIt is recommended that you see 'Help > Get started with ccdoom' to learn how to use ccdoom. \n\nI hope you will enjoy ccdoom as much as I enjoy working on it!\n\n Regards,\n Andrei Datcu.","Welcome!",JOptionPane.INFORMATION_MESSAGE);
 			// building the main frame
-			JFrame mainFrame = new JFrame("ccdoom for "+System.getProperty("os.name")+": 19 Sep 2021");
+			JFrame mainFrame = new JFrame("ccdoom for "+System.getProperty("os.name")+": 21 Sep 2021");
 		
 			mainFrame.setLayout(new BorderLayout());
 			mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

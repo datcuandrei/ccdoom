@@ -91,7 +91,7 @@ public class help{
 			// using html to create the about section.
 			JTextPane aboutSection = new JTextPane();
 			aboutSection.setContentType("text/html");
-			aboutSection.setText("<html><head></head><body><div align=\"center\"><img src=\"https://raw.githubusercontent.com/datcuandrei/ccdoom/main/img/about.png\" /><br><h1>ccdoom</h1><h2>0.5-alpha</h2><br><p>A cross-compatible DOOM launcher.</p><br><p>© 2021 Andrei Datcu</p><br><p>This program comes with absolutely no warranty.<br>See the GNU General Public License, version 3 or later for details.</p></div></body></html>");
+			aboutSection.setText("<html><head></head><body><div align=\"center\"><img src=\"https://raw.githubusercontent.com/datcuandrei/ccdoom/main/img/about.png\" /><br><h1>ccdoom</h1><h2>0.5.6-alpha</h2><br><p>A cross-compatible DOOM launcher.</p><br><p>© 2021 Andrei Datcu</p><br><p>This program comes with absolutely no warranty.<br>See the GNU General Public License, version 3 or later for details.</p></div></body></html>");
 			aboutSection.setEditable(false);
 
 			JButton authorPage = new JButton("See author's page");

@@ -7,7 +7,7 @@ Modules and their roles :
 - profiles.java: contains the methods responsible for the functionality of the submenus found in the 'Profiles' menu.
 - conf.java: contains methods for writing and reading specific files for profiles.
 - sp.java: class that launches DOOM with the desired options.
-
+- multiplayer.java: class that contains the methods for launching a multiplayer match.
 
 CCDOOM - A cross-compatible DOOM launcher. 
 Copyright (C) 2021 Andrei Datcu.
