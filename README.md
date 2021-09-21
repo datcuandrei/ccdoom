@@ -19,17 +19,14 @@ This is how ccdoom looks across different OS'
 - You can add additional arguments to enhance your DOOM experience.
 - ccdoom is lightweight : it uses under 50 MBs of RAM.
 - Support for profiles : Love your current configuration? You can save it as a profile, and load it any time you want. You can have as many profiles as you want.
+- Partial multiplayer support : ccdoom's main focus is to be a great single player DOOM launcher, but from time to time, I do enjoy to have some multiplayer action. That's why I added partial multiplayer support. Thanks to [doomlist](https://doomlist.net), ccdoom now has a server browser for Zandronum servers.
 
-![](img/051-alpha.png)
-> A screenshot of ccdoom 0.5.1-alpha running Zandronum with Brutal Doom mod, on ArcoLinux.
-> And a peak at the upcoming server browser ;)
+![](img/056-alpha.png)
+> A screenshot of ccdoom 0.5.6-alpha running Zandronum with Brutal Doom mod on a multiplayer server, on ArcoLinux.
 
 ## What to expect in the future releases
 - No PATH variable requirement:
 If it isn't added to your PATH variable, you can browse for the location of your source port and ccdoom will save the location to it.
-
-- Multiplayer support:
-With the final release, I am planning to add multiplayer support.
 
 ## Building
 In order to build ccdoom, all you need is basically a JDK.
